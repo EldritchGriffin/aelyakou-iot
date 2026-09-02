@@ -22,4 +22,6 @@ spec:
               containerPort: 8888
           # Keeps curl from hitting the pod before the app is listening
           readinessProbe:
-            httpGet: { path: /, port: http }
+            httpGet:
+              path: /
+              port: http
